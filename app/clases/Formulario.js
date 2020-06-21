@@ -83,7 +83,7 @@ class Listado {
         var instancia = this;
 
         let ls = localStorage.getItem('listado');
-        const listado = JSON.parse(ls);
+        let listado = JSON.parse(ls || '[]');
 
         var lista = document.getElementById('lista');
         while (lista.firstChild) {
